@@ -854,4 +854,4 @@ const hawk = new Hawk("Hawky", 3, 50);
 
 console.log(`The ${rabbit.name} is ${rabbit.age} years old and can run at a speed of ${rabbit.runspeed} km/h.`);
 console.log(`The ${fish.name} is ${fish.age} years old and can swim at a speed of ${fish.swimspeed} km/h.`);
-console.log(`The ${hawk.name} is ${hawk.age} years old and can fly at a speed of ${hawk.fliespeed} km/h.`);
+console.log(`The ${hawk.name} is ${hawk.age} years old and can fly at a speed of ${hawk.fliespeed} km/h.`); 

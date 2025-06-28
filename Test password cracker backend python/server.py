@@ -5,7 +5,7 @@ from multiprocessing import Process, Queue
 
 app = Flask(__name__)
 
-charset = "azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN0123456789&@#~_--+*/!?"
+charset = "azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN0123456789&@#~_--+*/!?()$"
 
 def crack_worker(target, length, charset, queue):
     attempts = 0
@@ -31,9 +31,9 @@ def brute_force_parallel(target):
         p.start()
         processes.append(p)
 
-    result = queue.get()  # Bloque jusqu'à ce qu'un worker trouve le mot de passe
+    result = queue.get() 
 
-    # Arrête les autres processus
+
     for p in processes:
         p.terminate()
 

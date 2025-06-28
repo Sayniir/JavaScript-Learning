@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compteur de clics global</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      user-select: none;
+    }
+    #compteur {
+      font-size: 60px;
+      color: royalblue;
+    }
+    p {
+      font-size: 18px;
+      color: gray;
+    }
+body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .click-circle {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: rgba(0, 123, 255, 0.6);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      animation: pop 0.5s ease-out forwards;
+      pointer-events: none;
+    }
+
+    @keyframes pop {
+      0% {
+        transform: translate(-50%, -50%) scale(0.6);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🖱️ Clics détectés :</h1>
+  <div id="compteur">0</div>
+  <p>(Clique n'importe où sur la page)</p>
+
+  <script>
+    let compteur = 0;
+    const affichage = document.getElementById("compteur");
+
+    document.addEventListener("click", () => {
+      compteur++;
+      affichage.textContent = compteur;
+    });
+
+document.addEventListener("click", function (e) {
+    const circle = document.createElement("div");
+    circle.classList.add("click-circle");
+
+
+    circle.style.left = `${e.clientX}px`;
+    circle.style.top = `${e.clientY}px`;
+
+
+    document.body.appendChild(circle);
+
+
+    setTimeout(() => {
+      circle.remove();
+    }, 500);
+  });
+  </script>
+
+</body>
+</html>
