@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.container h1 {
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container p {
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(12, 12, 12);
+    transition: 0.3s ease;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.container button:hover {
+    transform: scale(1.1);
+    background-color: rgb(12, 12, 12);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.container button:active {
+    transform: scale(1.05);
+}
+
+body {
+    background-color: rgb(12, 12, 12);
+    transition: all 1s ease;
+}
