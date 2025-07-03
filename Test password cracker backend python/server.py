@@ -31,8 +31,7 @@ def brute_force_parallel(target):
         p.start()
         processes.append(p)
 
-    result = queue.get() 
-
+    result = queue.get()  
 
     for p in processes:
         p.terminate()
