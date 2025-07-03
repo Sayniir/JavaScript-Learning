@@ -899,4 +899,49 @@ console.log(getCircumference(5));
 console.log(getArea(5));
 console.log(getDiameter(5));*/
 
+/*function func1(callback){
+  setTimeout(() => {
+    console.log("Function 1 executed");
+    callback();
+  }, 2000);
+}
+
+function func2(){
+  console.log("Function 2 executed");
+  console.log("Function 3 executed");
+  console.log("Function 4 executed");
+}
+
+func1(func2);*/
+
+/*try{
+  consle.log("Hello World");
+}
+catch(error){
+  console.error("An error occurred:", error.message);
+}
+finally{
+  console.log("Thank you for using our program!");
+}
+
+console.log("You have reached the end !");*/
+
+/*try{
+  const dividend = Number(window.prompt("Enter a dividend : "));
+  const divisor = Number(window.prompt("Enter a divisor : "));
+
+  if(divisor === 0){
+    throw new Error("Division by zero is not allowed.");
+  }
+  if(isNaN(dividend) || isNaN(divisor)){
+    throw new Error("Both inputs must be numbers.");
+  }
+}
+catch{
+  console.error(Error);
+}
+
+const result = dividend / divisor;
+
+console.log(result)*/
 
