@@ -820,7 +820,7 @@ rabbit.alive = false;
 console.log(`Is the ${rabbit.name} alive? ${rabbit.alive}`);
 rabbit.eat();*/
 
-class Animal {
+/*class Animal {
   constructor(name, age, speed){
     this.name = name;
     this.age = age;
@@ -854,4 +854,49 @@ const hawk = new Hawk("Hawky", 3, 50);
 
 console.log(`The ${rabbit.name} is ${rabbit.age} years old and can run at a speed of ${rabbit.runspeed} km/h.`);
 console.log(`The ${fish.name} is ${fish.age} years old and can swim at a speed of ${fish.swimspeed} km/h.`);
-console.log(`The ${hawk.name} is ${hawk.age} years old and can fly at a speed of ${hawk.fliespeed} km/h.`); 
+console.log(`The ${hawk.name} is ${hawk.age} years old and can fly at a speed of ${hawk.fliespeed} km/h.`); */
+
+/*class Rectanglee{
+  constructor(width, height){
+    this.width = width;
+    this.height = height;
+  }
+
+  set width(newWidth){
+    if(newWidth > 0){
+      this._width = newWidth;
+    }
+    else{
+      console.error("It must be a positive number !")
+    }
+  }
+
+  set height(newHeight){
+    if(newHeight > 0){
+      this._height = newHeight;
+    }
+    else{
+      console.error("It must be a positive number !")
+    }
+  }
+
+  get width(){
+    return this._width;
+  }
+  get height(){
+    return this._height;
+  }
+}
+
+const Rectangle = new Rectanglee(1111, 1);
+
+ console.log(Rectangle)*/
+
+/*import {PI, getCircumference, getArea, getDiameter} from './math-util.js';
+
+console.log(PI);
+console.log(getCircumference(5));
+console.log(getArea(5));
+console.log(getDiameter(5));*/
+
+

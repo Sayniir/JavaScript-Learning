@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: arial;;
+}
+#MyH1{
+    font-size: 5rem;
+}
+#container{
+    border: 5px solid black;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+#display{
+    color: black;
+    font-size: 8rem;
+    padding: 5px 5px;
+    font-family: monospace;
+}
+
+#controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 5px;
+    margin-top: 10px;
+}
+
+button{
+    padding: 15px 25px;
+    font-size: 36px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: arial;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.start{
+    background-color: green;
+    border: solid 1px green;
+    color: white;
+
+}
+
+.start:hover{
+    background-color: white;
+    color: green;
+}
+
+.stop{
+    background-color: red;
+    border: 1px solid red;
+    color:  white;
+}
+.stop:hover{
+    background-color: white;
+    color: red;
+}
+
+#reset{
+    background-color: gray;
+    color: white;
+    border: 1px solid gray;
+}
+#reset:hover{
+    background-color: white;
+    color: gray;
+}
