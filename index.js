@@ -1088,4 +1088,18 @@ console.log(parsed)*/
 
   // JSON = Javascript Object Notation
 
-  
+FetchData()
+
+async function FetchData() {
+  try{
+    const response = await fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
+    if(!response.ok){
+      throw new Error("This is not a pokemon");
+    }
+    const data = await response.json();
+    console.log(data)
+  }
+  catch(error){
+    console.error(error);
+  }
+}
