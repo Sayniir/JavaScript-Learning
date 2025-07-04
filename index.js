@@ -998,3 +998,94 @@ task1(() => {
   })
 })*/
 
+/*function walkdog(){
+  return new Promise((resolve, reject)=>{
+    setTimeout(()=> {
+      resolve("You walk the dog");
+    }, 2000);
+  })
+}
+
+function clean(){
+  return new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+      resolve("You cleaned");
+    }, 2500);
+  })
+}
+
+function takeouttrash(){
+return new Promise((resolve, reject)=>{
+  setTimeout(()=>{
+    resolve("You took out the trash");
+  }, 500)
+})
+}*/
+
+/*walkdog().then(value => {console.log(value); return clean()})
+.then(value =>{console.log(value); return takeouttrash()})
+.then(value=> {console.log(value); console.log("You're done")});*/
+
+
+// callback hell :
+/*walkdog(()=>{
+  clean(()=>{
+    takeouttrash(()=>{
+      console.log("done")
+    })
+  })
+})*/
+
+
+/*async function doChores(){
+  const walkdogResult = await walkdog();
+  console.log(walkdogResult);
+
+  const cleanResult = await clean();
+  console.log(cleanResult);
+
+  const takeouttrashresult = await takeouttrash();
+  console.log(takeouttrashresult);
+
+  console.log("You're done");
+}
+
+doChores();*/
+
+
+/*const names = ["SpongeBob", "Patrick", "Squidward", "Sandy"];
+
+const person = {
+    "name" : "SpongeBob",
+    "age" : 30,
+    "isEmployed" : true
+}
+
+const people = [{
+    "name" : "SpongeBob",
+    "age" : 30,
+    "isEmployed" : true
+},
+{
+    "name":"Patrick",
+    "age" : 42,
+    "isEmployed" : false
+}]
+
+const Jsonpeople = `[{"name":"SpongeBob","age":30,"isEmployed":true},{"name":"Patrick","age":42,"isEmployed":false}]`;
+
+
+const parsed = JSON.parse(Jsonpeople)
+
+
+console.log(Jsonpeople)
+console.log(parsed)*/
+
+/*fetch("names.json")
+  .then(response => response.json())
+  .then(values => values.forEach(value => console.log(value)))
+  .catch(error => console.error(error));*/
+
+  // JSON = Javascript Object Notation
+
+  
