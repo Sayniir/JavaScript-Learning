@@ -12,6 +12,9 @@ function calculate(){
     try{
         const result = parseFloat(eval(display.value).toFixed(4));
         display.value = result;
+        if(display.value === "Infinity"){
+            display.value = "Cannot divide by 0"
+        }
     }
     catch(error){
         display.value = "Error"
@@ -19,5 +22,11 @@ function calculate(){
 }
 
 function deleteLast(){
-    display.value = display.value.slice(0, -1);
+    if(display.value === "Error"){
+        display.value = "Error"
+    }
+    else{
+        display.value = display.value.slice(0, -1);
+    }
+    
 }
