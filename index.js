@@ -1088,7 +1088,7 @@ console.log(parsed)*/
 
   // JSON = Javascript Object Notation
 
-FetchData()
+/*FetchData()
 
 async function FetchData() {
   try{
@@ -1102,4 +1102,115 @@ async function FetchData() {
   catch(error){
     console.error(error);
   }
-}
+}*/
+
+
+// create an element :
+/*const newH1 = document.createElement("h1");
+
+
+// add attributes/properties : 
+newH1.textContent = "I like pizza";
+newH1.id = "MyH1";
+newH1.style.color = "tomato";
+newH1.style.textAlign = "center";
+
+// append the element
+document.body.append(newH1);
+
+document.getElementById("box1").append(newH1)
+
+document.getElementById("box1").removeChild(newH1)*/
+
+/*const newItem = document.createElement("li");
+
+newItem.textContent = "coconut";
+newItem.id = "coconut";
+newItem.style.fontWeight = "bold"
+newItem.style.backgroundColor = "lightgreen";
+
+document.getElementById("box").append(newItem);
+
+document.getElementById("box").removeChild(newItem)*/
+
+/*const mybox = document.getElementById("mybox");
+const button = document.getElementById("button");
+
+mybox.addEventListener("click", function(event){
+  event.target.style.backgroundColor = "tomato";
+  event.target.textContent = "OUCH !"
+})
+
+mybox.addEventListener("mouseover", event =>{
+  event.target.style.backgroundColor = "yellow";
+  event.target.textContent = "Danger"
+})
+
+mybox.addEventListener("mouseout", event =>{
+  event.target.style.backgroundColor="lightblue";
+  event.target.textContent = "Click Me";
+})
+
+function box(){
+  mybox.style.backgroundColor="tomato";
+  mybox.textContent = "Ouch"
+}*/
+
+
+const mybox = document.getElementById("mybox")
+const moveamount = 10;
+const button = document.getElementById("button");
+
+let x =0;
+let y =0;
+
+/*document.addEventListener("keydown", event=>{
+  if(event.key.startsWith("Arrow")){
+    switch(event.key){
+      case "ArrowUp":
+        y -= moveamount;
+        break;
+      case "ArrowDown":
+        y += moveamount;
+        break;
+      case "ArrowLeft":
+        x -= moveamount;
+        break;
+      case "ArrowRight":
+        x += moveamount;
+        break;
+
+    }
+    mybox.style.top =`${y}px`;
+    mybox.style.left =`${x}px`;
+  }
+})*/
+
+
+button.addEventListener("click", event=>{
+  if(mybox.style.visibility === "hidden"){
+    mybox.style.visibility = "visible";
+    button.textContent = "Hide";
+  }
+  else{
+    mybox.style.visibility = "hidden";
+    button.textContent = "Show";
+  }
+})
+
+
+
+
+
+
+
+
+/*document.addEventListener("keydown", event=> {
+  document.body.style.backgroundColor = "blue";
+})
+
+document.addEventListener("keyup", event=> {
+  document.body.style.backgroundColor = "white";
+})*/
+
+
